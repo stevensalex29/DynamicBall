@@ -6,10 +6,12 @@ public class Accelerometer : MonoBehaviour{
 
     public float speed = 10.0f;
     Rigidbody rb;
+    GameObject startButton;
 
     // Start is called before the first frame update
     void Start(){
         rb = GetComponent<Rigidbody>();
+        startButton = GameObject.Find("Start");
     }
 
     // Update is called once per frame
@@ -21,6 +23,10 @@ public class Accelerometer : MonoBehaviour{
 
         Vector3 acc = Input.acceleration;
 
-        rb.AddForce(acc.x * speed, 0, acc.y * speed);
+        if (!startButton.activeSelf)
+        {
+            rb.AddForce(acc.x * speed, 0, acc.y * speed);
+        }
+       
     }
 }
