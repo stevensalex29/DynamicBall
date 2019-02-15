@@ -23,7 +23,7 @@ public class ButtonScript : MonoBehaviour
         startButton = GameObject.Find("Start");
         HowToText = GameObject.Find("HowToText");
         RText = GameObject.Find("RText");
-        StartText = GameObject.Find("StartText");
+        StartText = GameObject.Find("SText");
         Background = GameObject.Find("Background");
         restartButton = GameObject.Find("Restart");
         PlayerBall = GameObject.Find("PlayerBall");

@@ -26,6 +26,9 @@ public class Accelerometer : MonoBehaviour{
         if (!startButton.activeSelf)
         {
             rb.AddForce(acc.x * speed, 0, acc.y * speed);
+        }else
+        {
+            rb.velocity = new Vector3(0.0f, 0.0f, 0.0f);
         }
        
     }
