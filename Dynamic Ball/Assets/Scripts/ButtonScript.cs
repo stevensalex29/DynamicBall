@@ -7,7 +7,6 @@ public class ButtonScript : MonoBehaviour
 {
     //Attributes
     GameObject startButton;
-    GameObject startLine;
     GameObject HowToText;
     GameObject RText;
     GameObject StartText;
@@ -19,7 +18,6 @@ public class ButtonScript : MonoBehaviour
     void Start()
     {
         // Initialize variables
-        startLine = GameObject.FindGameObjectWithTag("StartLine");
         startButton = GameObject.Find("Start");
         HowToText = GameObject.Find("HowToText");
         RText = GameObject.Find("RText");
@@ -37,8 +35,7 @@ public class ButtonScript : MonoBehaviour
 
     // Start the game
     public void StartGame() {
-        // Set starting items as false and deactivate start line
-        startLine.SetActive(false);
+        // Set starting items as false
         gameObject.SetActive(false);
         HowToText.SetActive(false);
         RText.SetActive(false);
@@ -49,13 +46,12 @@ public class ButtonScript : MonoBehaviour
     // Restart the game
     public void RestartGame()
     {
-        // Set starting items as true, activate start line and move ball back
+        // Set starting items as true, move ball back
         PlayerBall.transform.SetPositionAndRotation(new Vector3(0.5762594f, 9.607f, -11.205f), Quaternion.identity);
         startButton.SetActive(true);
         HowToText.SetActive(true);
         RText.SetActive(true);
         StartText.SetActive(true);
         Background.SetActive(true);
-        startLine.SetActive(true);
     }
 }
