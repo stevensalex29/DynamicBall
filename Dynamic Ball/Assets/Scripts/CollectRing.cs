@@ -24,7 +24,7 @@ public class CollectRing : MonoBehaviour
         {
             Destroy(collision.gameObject);
             coinCounter++;
-            GameObject.Find("CoinCounter").GetComponent<UnityEngine.UI.Text>().text = "Coins: " + coinCounter.ToString();
+            GameObject.Find("CoinCounter").GetComponent<UnityEngine.UI.Text>().text = "Rings: " + coinCounter.ToString();
         }
     }
 
@@ -33,7 +33,7 @@ public class CollectRing : MonoBehaviour
         if (collision.gameObject.tag == "Ring") {
             Destroy(collision.gameObject);
             coinCounter++;
-            GameObject.Find("CoinCounter").GetComponent<UnityEngine.UI.Text>().text = "Coins: " + coinCounter.ToString();
+            GameObject.Find("CoinCounter").GetComponent<UnityEngine.UI.Text>().text = "Rings: " + coinCounter.ToString();
         }
     }
 }
