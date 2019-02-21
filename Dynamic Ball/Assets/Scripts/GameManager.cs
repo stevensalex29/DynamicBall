@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     //Attributes
     private List<string> levels;
     private int currentLevel;
+    private int totalRings;
     
     // Use this for initialization
     void Start()
@@ -24,6 +25,11 @@ public class GameManager : MonoBehaviour
             currentLevel = PlayerPrefs.GetInt("currentLevel"); //setup current level in playerprefs
         else
             PlayerPrefs.SetInt("currentLevel", 0);
+
+        if (PlayerPrefs.HasKey("totalRings"))
+            totalRings = PlayerPrefs.GetInt("totalRings"); //setup current level in playerprefs
+        else
+            PlayerPrefs.SetInt("totalRings", 0);
     }
 
     // Update is called once per frame
@@ -35,8 +41,14 @@ public class GameManager : MonoBehaviour
     // Loads the next level scene
     public void nextLevel()
     {
+        // set total rings
+        int rings = GameObject.Find("PlayerBall").GetComponent<CollectRing>().getRings();
+        int total = PlayerPrefs.GetInt("totalRings");
+        int t = total + rings;
+        PlayerPrefs.SetInt("totalRings",t);
+
         currentLevel++;
-    
+          
         if (currentLevel == levels.Count)
         {
             PlayerPrefs.SetInt("currentLevel", 0);

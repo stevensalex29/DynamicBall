@@ -18,6 +18,12 @@ public class CollectRing : MonoBehaviour
     {
         
     }
+
+    public int getRings()
+    {
+        return coinCounter;
+    }
+
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.tag == "Ring")
