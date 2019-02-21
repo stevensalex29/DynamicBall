@@ -32,4 +32,14 @@ public class Accelerometer : MonoBehaviour{
         }
        
     }
+
+    // Collide with goal and call next level
+    void OnTriggerEnter(Collider col)
+    {
+        if (col.gameObject.tag == "Goal")
+        {
+            col.gameObject.SetActive(false);
+            GameObject.Find("GameManager").GetComponent<GameManager>().nextLevel();
+        }
+    }
 }

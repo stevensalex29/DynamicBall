@@ -3,13 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - StartLine
-<<<<<<< HEAD
-  - Goal
-=======
-  - Ring
->>>>>>> 42d1501416123c1aaddff22bf5e00ec9d6bdf8cd
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -19,7 +13,7 @@ TagManager:
   - UI
   - 
   - 
-  - PostProcessing
+  - 
   - 
   - 
   - 

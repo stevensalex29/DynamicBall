@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TutorialScene.unity
     guid: c4d57b83c21a6df4aaa4e72327272bdd
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: 01dbc7f8be578e542ae164e81ad245a9
+  - enabled: 0
+    path: Assets/Scenes/Dunko's ringboi scene.unity
+    guid: 7eafdcea4260f384c8438e2891d8ae4c
   m_configObjects: {}

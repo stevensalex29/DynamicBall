@@ -12,13 +12,13 @@ public class GameManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        levels = new List<string> {"TutorialScene","Level2"};
         Scene currentScene = SceneManager.GetActiveScene(); //reset playerPrefs if at starting level
         string sceneName = currentScene.name;
-        //if (sceneName == "Level1Tutorial")
-        //{
-        //    PlayerPrefs.DeleteAll();
-        //}
+        if (sceneName == "TutorialScene")
+        {
+            PlayerPrefs.DeleteAll();
+        }
 
         if (PlayerPrefs.HasKey("currentLevel"))
             currentLevel = PlayerPrefs.GetInt("currentLevel"); //setup current level in playerprefs
@@ -40,9 +40,7 @@ public class GameManager : MonoBehaviour
         if (currentLevel == levels.Count)
         {
             PlayerPrefs.SetInt("currentLevel", 0);
-        }
-
-        else
+        }else
         {
             PlayerPrefs.SetInt("currentLevel", currentLevel);
             SceneManager.LoadScene(levels[currentLevel]);
