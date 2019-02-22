@@ -14,6 +14,7 @@ public class ButtonScript : MonoBehaviour
     GameObject restartButton;
     GameObject PlayerBall;
     Vector3 startPosition;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -50,6 +51,18 @@ public class ButtonScript : MonoBehaviour
     {
         // Set starting items as true, move ball back
         PlayerBall.transform.SetPositionAndRotation(startPosition, Quaternion.identity);
+
+        // Reset rings
+        GameObject[] rings = GameObject.Find("PlayerBall").GetComponent<CollectRing>().getAllRings();
+        for(int i = 0; i < rings.Length; i++)
+        {
+            rings[i].SetActive(true);
+        }
+
+        GameObject.Find("PlayerBall").GetComponent<CollectRing>().setCoinCounter(0);
+
+
+        // Reset UI
         startButton.SetActive(true);
         HowToText.SetActive(true);
         RText.SetActive(true);

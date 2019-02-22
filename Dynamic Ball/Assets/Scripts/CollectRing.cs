@@ -5,12 +5,21 @@ using UnityEngine;
 public class CollectRing : MonoBehaviour
 {
     private int coinCounter;
+    private int tRings;
+    private GameObject[] rings;
 
     // Start is called before the first frame update
     void Start()
     {
         coinCounter = 0;
-        GameObject.Find("CoinCounter").GetComponent<UnityEngine.UI.Text>().text = "Rings: " + coinCounter.ToString();
+
+        // get total rings of level
+        tRings = GameObject.FindGameObjectsWithTag("Ring").Length;
+        // set initial ring display
+        GameObject.Find("CoinCounter").GetComponent<UnityEngine.UI.Text>().text = "Rings: " + coinCounter.ToString() + "/" + tRings;
+        // get ring objects
+        rings = GameObject.FindGameObjectsWithTag("Ring");
+
     }
 
     // Update is called once per frame
@@ -19,6 +28,20 @@ public class CollectRing : MonoBehaviour
         
     }
 
+    // Set the coin counter
+    public void setCoinCounter(int t)
+    {
+        coinCounter = t;
+        GameObject.Find("CoinCounter").GetComponent<UnityEngine.UI.Text>().text = "Rings: " + coinCounter.ToString() + "/" + tRings;
+    }
+
+    // Returns all coins of current level
+    public GameObject[] getAllRings()
+    {
+        return rings;
+    }
+
+    // Get coin counter
     public int getRings()
     {
         return coinCounter;
@@ -28,9 +51,9 @@ public class CollectRing : MonoBehaviour
     {
         if (collision.gameObject.tag == "Ring")
         {
-            Destroy(collision.gameObject);
+            collision.gameObject.SetActive(false);
             coinCounter++;
-            GameObject.Find("CoinCounter").GetComponent<UnityEngine.UI.Text>().text = "Rings: " + coinCounter.ToString();
+            GameObject.Find("CoinCounter").GetComponent<UnityEngine.UI.Text>().text = "Rings: " + coinCounter.ToString() + "/" + tRings;
         }
     }
 
@@ -39,7 +62,7 @@ public class CollectRing : MonoBehaviour
         if (collision.gameObject.tag == "Ring") {
             Destroy(collision.gameObject);
             coinCounter++;
-            GameObject.Find("CoinCounter").GetComponent<UnityEngine.UI.Text>().text = "Rings: " + coinCounter.ToString();
+            GameObject.Find("CoinCounter").GetComponent<UnityEngine.UI.Text>().text = "Rings: " + coinCounter.ToString() + "/" + tRings;
         }
     }
 }

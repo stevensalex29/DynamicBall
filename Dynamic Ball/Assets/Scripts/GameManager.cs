@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     private List<string> levels;
     private int currentLevel;
     private int totalRings;
-    
+
     // Use this for initialization
     void Start()
     {
