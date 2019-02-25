@@ -2817,7 +2817,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Tilt your device to move the ball
+  m_Text: Tilt your device to move the ball, tap to jump.
 --- !u!222 &1430027327
 CanvasRenderer:
   m_ObjectHideFlags: 0

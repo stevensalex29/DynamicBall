@@ -18,7 +18,7 @@ public class Jump : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && !startButton.activeSelf && IsGrounded())
+        if ((Input.GetKeyDown(KeyCode.Space) || Input.touchCount > 0 ) && !startButton.activeSelf && IsGrounded())
         {
             GetComponent<Rigidbody>().AddForce(new Vector3(0, 200, 0));
         }
