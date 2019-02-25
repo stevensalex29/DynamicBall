@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Jump : MonoBehaviour
 {
@@ -17,12 +18,9 @@ public class Jump : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!startButton.activeSelf && IsGrounded())
+        if (Input.GetKeyDown(KeyCode.Space) && !startButton.activeSelf && IsGrounded())
         {
-            if (Input.touchCount > 0)
-            {
-                GetComponent<Rigidbody>().AddForce(new Vector3(0, 500, 0));
-            }
+            GetComponent<Rigidbody>().AddForce(new Vector3(0, 200, 0));
         }
     }
 
@@ -31,5 +29,13 @@ public class Jump : MonoBehaviour
     {
         //game object position, direction of raycast, max distance to ground + 0.1 to account for variation
         return Physics.Raycast(transform.position, -Vector3.up, distToGround + 0.1f);
+    }
+
+    public void OnPointerDown(BaseEventData eventData)
+    {
+        if (!startButton.activeSelf && IsGrounded())
+        {
+            GetComponent<Rigidbody>().AddForce(new Vector3(0, 500, 0));
+        }
     }
 }
