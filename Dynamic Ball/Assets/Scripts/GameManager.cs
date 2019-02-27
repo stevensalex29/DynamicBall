@@ -52,6 +52,7 @@ public class GameManager : MonoBehaviour
         if (currentLevel == levels.Count)
         {
             PlayerPrefs.SetInt("currentLevel", 0);
+            SceneManager.LoadScene("EndGame");
         }else
         {
             PlayerPrefs.SetInt("currentLevel", currentLevel);

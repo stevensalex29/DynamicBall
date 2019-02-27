@@ -7,9 +7,7 @@ public class ButtonScript : MonoBehaviour
 {
     //Attributes
     GameObject startButton;
-    GameObject HowToText;
     GameObject RText;
-    GameObject StartText;
     GameObject Background;
     GameObject restartButton;
     GameObject PlayerBall;
@@ -24,7 +22,7 @@ public class ButtonScript : MonoBehaviour
         // Retrieve the name of this scene.
         string sceneName = currentScene.name;
 
-        if (sceneName == "Menu")
+        if (sceneName == "Menu" || sceneName == "HowToPlay" || sceneName == "EndGame")
         {
             
         }
@@ -32,9 +30,7 @@ public class ButtonScript : MonoBehaviour
         {
             // Initialize variables
             startButton = GameObject.Find("Start");
-            HowToText = GameObject.Find("HowToText");
             RText = GameObject.Find("RText");
-            StartText = GameObject.Find("SText");
             Background = GameObject.Find("Background");
             restartButton = GameObject.Find("Restart");
             PlayerBall = GameObject.Find("PlayerBall");
@@ -53,9 +49,7 @@ public class ButtonScript : MonoBehaviour
     public void StartGame() {
         // Set starting items as false
         gameObject.SetActive(false);
-        HowToText.SetActive(false);
         RText.SetActive(false);
-        StartText.SetActive(false);
         Background.SetActive(false);
     }
 
@@ -77,9 +71,7 @@ public class ButtonScript : MonoBehaviour
 
         // Reset UI
         startButton.SetActive(true);
-        HowToText.SetActive(true);
         RText.SetActive(true);
-        StartText.SetActive(true);
         Background.SetActive(true);
     }
     public void PlayGame()
@@ -93,5 +85,9 @@ public class ButtonScript : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
+    }
+    public void Back()
+    {
+        SceneManager.LoadScene("Menu");
     }
 }
