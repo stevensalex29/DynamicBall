@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 public class ButtonScript : MonoBehaviour
 {
@@ -19,15 +19,28 @@ public class ButtonScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Initialize variables
-        startButton = GameObject.Find("Start");
-        HowToText = GameObject.Find("HowToText");
-        RText = GameObject.Find("RText");
-        StartText = GameObject.Find("SText");
-        Background = GameObject.Find("Background");
-        restartButton = GameObject.Find("Restart");
-        PlayerBall = GameObject.Find("PlayerBall");
-        startPosition = GameObject.Find("StartPosition").transform.position;
+        Scene currentScene = SceneManager.GetActiveScene();
+
+        // Retrieve the name of this scene.
+        string sceneName = currentScene.name;
+
+        if (sceneName == "Menu")
+        {
+            
+        }
+        else
+        {
+            // Initialize variables
+            startButton = GameObject.Find("Start");
+            HowToText = GameObject.Find("HowToText");
+            RText = GameObject.Find("RText");
+            StartText = GameObject.Find("SText");
+            Background = GameObject.Find("Background");
+            restartButton = GameObject.Find("Restart");
+            PlayerBall = GameObject.Find("PlayerBall");
+            startPosition = GameObject.Find("StartPosition").transform.position;
+        }
+        
     }
 
     // Update is called once per frame
@@ -68,5 +81,17 @@ public class ButtonScript : MonoBehaviour
         RText.SetActive(true);
         StartText.SetActive(true);
         Background.SetActive(true);
+    }
+    public void PlayGame()
+    {
+        SceneManager.LoadScene("TutorialScene");
+    }
+    public void HowTo()
+    {
+        SceneManager.LoadScene("HowToPlay");
+    }
+    public void Quit()
+    {
+        Application.Quit();
     }
 }
