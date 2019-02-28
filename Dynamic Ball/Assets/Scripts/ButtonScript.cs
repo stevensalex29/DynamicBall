@@ -84,6 +84,7 @@ public class ButtonScript : MonoBehaviour
     }
     public void Quit()
     {
+        Debug.Log("Test button end scene");
         Application.Quit();
     }
     public void Back()
