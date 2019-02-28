@@ -45,6 +45,24 @@ public class Accelerometer : MonoBehaviour{
             col.gameObject.SetActive(false);
             GameObject.Find("GameManager").GetComponent<GameManager>().nextLevel();
         }
+
+        else if (col.gameObject.tag == "DeathBox")
+        {
+            //Reset position and rotation
+            gameObject.transform.SetPositionAndRotation(GameObject.Find("StartPosition").transform.position, Quaternion.identity);
+
+            //Reset rings and ring counter
+            GameObject[] rings = gameObject.GetComponent<CollectRing>().getAllRings();
+            for (int i = 0; i < rings.Length; i++)
+            {
+                rings[i].SetActive(true);
+            }
+            gameObject.GetComponent<CollectRing>().setCoinCounter(0);
+
+            //Reset movement
+            rb.velocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+        }
     }
 
     public void Calibration()
