@@ -58,6 +58,8 @@ public class ButtonScript : MonoBehaviour
     {
         // Set starting items as true, move ball back
         PlayerBall.transform.SetPositionAndRotation(startPosition, Quaternion.identity);
+        PlayerBall.GetComponent<Rigidbody>().velocity = Vector3.zero;
+        PlayerBall.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
 
         // Reset rings
         GameObject[] rings = GameObject.Find("PlayerBall").GetComponent<CollectRing>().getAllRings();
@@ -66,7 +68,7 @@ public class ButtonScript : MonoBehaviour
             rings[i].SetActive(true);
         }
 
-        GameObject.Find("PlayerBall").GetComponent<CollectRing>().setCoinCounter(0);
+        PlayerBall.GetComponent<CollectRing>().setCoinCounter(0);
 
 
         // Reset UI
