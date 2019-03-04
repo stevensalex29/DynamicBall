@@ -29,7 +29,7 @@ public class Accelerometer : MonoBehaviour{
             vert = -Input.acceleration.z + zStart;
 
             Vector3 acc = new Vector3(horz, 0, vert);
-            rb.AddForce(acc * 10.0f);
+            rb.AddForce(acc * speed);
             //rb.AddForce(acc.x * speed, 0, acc.y * speed);
         }else
         {
