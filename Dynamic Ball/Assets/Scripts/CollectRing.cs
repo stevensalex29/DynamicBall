@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,12 +8,15 @@ public class CollectRing : MonoBehaviour
     private int coinCounter;
     private int tRings;
     private GameObject[] rings;
+    private GameObject goal;
 
     // Start is called before the first frame update
     void Start()
     {
         coinCounter = 0;
-
+        // set goal object
+        goal = GameObject.FindGameObjectWithTag("Goal");
+        goal.SetActive(false);
         // get total rings of level
         tRings = GameObject.FindGameObjectsWithTag("Ring").Length;
         // set initial ring display
@@ -25,7 +29,16 @@ public class CollectRing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(coinCounter == tRings / 2)
+        {
+            goal.SetActive(true);
+        }
+    }
+
+    // Get the goal object
+    public GameObject getGoal()
+    {
+        return goal;
     }
 
     // Set the coin counter

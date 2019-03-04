@@ -9,9 +9,11 @@ public class Accelerometer : MonoBehaviour{
     GameObject startButton;
     float xStart = 0, zStart = 0;
     float horz = 0, vert = 0;
+    GameObject goal;
 
     // Start is called before the first frame update
     void Start(){
+        goal = GameObject.Find("PlayerBall").GetComponent<CollectRing>().getGoal();
         rb = GetComponent<Rigidbody>();
         startButton = GameObject.Find("Start");
     }
@@ -48,6 +50,7 @@ public class Accelerometer : MonoBehaviour{
 
         else if (col.gameObject.tag == "DeathBox")
         {
+            goal.SetActive(false);
             //Reset position and rotation
             gameObject.transform.SetPositionAndRotation(GameObject.Find("StartPosition").transform.position, Quaternion.identity);
 

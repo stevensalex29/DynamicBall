@@ -12,12 +12,14 @@ public class ButtonScript : MonoBehaviour
     GameObject restartButton;
     GameObject PlayerBall;
     Vector3 startPosition;
+    GameObject goal;
     
 
     // Start is called before the first frame update
     void Start()
     {
         Scene currentScene = SceneManager.GetActiveScene();
+        goal = GameObject.Find("PlayerBall").GetComponent<CollectRing>().getGoal();
 
         // Retrieve the name of this scene.
         string sceneName = currentScene.name;
@@ -56,6 +58,10 @@ public class ButtonScript : MonoBehaviour
     // Restart the game
     public void RestartGame()
     {
+        if (goal != null)
+        {
+            goal.SetActive(false);
+        }
         // Set starting items as true, move ball back
         PlayerBall.transform.SetPositionAndRotation(startPosition, Quaternion.identity);
         PlayerBall.GetComponent<Rigidbody>().velocity = Vector3.zero;
