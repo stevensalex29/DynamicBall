@@ -24,15 +24,13 @@ public class Accelerometer : MonoBehaviour{
     }
 
     private void FixedUpdate(){
-
         if (!startButton.activeSelf)
         {
-            horz = Input.acceleration.x - xStart;
+            horz = Input.acceleration.x; // - xStart;
             vert = -Input.acceleration.z + zStart;
 
             Vector3 acc = new Vector3(horz, 0, vert);
             rb.AddForce(acc * speed);
-            //rb.AddForce(acc.x * speed, 0, acc.y * speed);
         }else
         {
             rb.velocity = new Vector3(0.0f, 0.0f, 0.0f);
@@ -70,7 +68,7 @@ public class Accelerometer : MonoBehaviour{
 
     public void Calibration()
     {
-        xStart = Input.acceleration.x;
+        //xStart = Input.acceleration.x;
         zStart = Input.acceleration.z;
     }
 }

@@ -13,6 +13,7 @@ public class ButtonScript : MonoBehaviour
     GameObject PlayerBall;
     Vector3 startPosition;
     GameObject goal;
+    GameObject calibration;
     
 
     // Start is called before the first frame update
@@ -37,6 +38,7 @@ public class ButtonScript : MonoBehaviour
             restartButton = GameObject.Find("Restart");
             PlayerBall = GameObject.Find("PlayerBall");
             startPosition = GameObject.Find("StartPosition").transform.position;
+            calibration = GameObject.Find("Calibration");
         }
         
     }
@@ -50,9 +52,13 @@ public class ButtonScript : MonoBehaviour
     // Start the game
     public void StartGame() {
         // Set starting items as false
-        gameObject.SetActive(false);
-        RText.SetActive(false);
-        Background.SetActive(false);
+        if (Input.acceleration.z > -0.7f && Input.acceleration.z < -0.2f) //Only starts the game if player holds the phone correctly
+        {
+            gameObject.SetActive(false);
+            RText.SetActive(false);
+            Background.SetActive(false);
+            calibration.SetActive(false);
+        }
     }
 
     // Restart the game
@@ -81,6 +87,7 @@ public class ButtonScript : MonoBehaviour
         startButton.SetActive(true);
         RText.SetActive(true);
         Background.SetActive(true);
+        calibration.SetActive(true);
     }
     public void PlayGame()
     {
