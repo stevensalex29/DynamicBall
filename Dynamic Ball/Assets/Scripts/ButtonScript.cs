@@ -20,7 +20,6 @@ public class ButtonScript : MonoBehaviour
     void Start()
     {
         Scene currentScene = SceneManager.GetActiveScene();
-        goal = GameObject.Find("PlayerBall").GetComponent<CollectRing>().getGoal();
 
         // Retrieve the name of this scene.
         string sceneName = currentScene.name;
@@ -32,6 +31,7 @@ public class ButtonScript : MonoBehaviour
         else
         {
             // Initialize variables
+            goal = GameObject.Find("PlayerBall").GetComponent<CollectRing>().getGoal();
             startButton = GameObject.Find("Start");
             RText = GameObject.Find("RText");
             Background = GameObject.Find("Background");
