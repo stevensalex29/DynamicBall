@@ -7,7 +7,6 @@ public class GameManager : MonoBehaviour
 {
     //Attributes
     private List<string> levels;
-    [SerializeField]
     private int currentLevel;
     private int totalRings;
     public bool next;
@@ -40,6 +39,7 @@ public class GameManager : MonoBehaviour
         if (next)
         {
             Invoke("nextLevel", 4.0f);
+            next = false;
         }
     }
 

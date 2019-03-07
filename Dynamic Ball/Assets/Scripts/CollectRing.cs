@@ -9,6 +9,7 @@ public class CollectRing : MonoBehaviour
     private int tRings;
     private GameObject[] rings;
     private GameObject goal;
+    public bool activeGoal = true;
 
     // Start is called before the first frame update
     void Start()
@@ -29,7 +30,7 @@ public class CollectRing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(coinCounter == tRings / 2 && !GameObject.Find("GameManager").GetComponent<GameManager>().next)
+        if(coinCounter == tRings / 2 && activeGoal)
         {
             goal.SetActive(true);
         }

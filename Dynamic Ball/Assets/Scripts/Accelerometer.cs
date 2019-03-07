@@ -44,9 +44,10 @@ public class Accelerometer : MonoBehaviour{
         {
             rb.constraints = RigidbodyConstraints.FreezePosition;
             GameObject.Find("Win").GetComponent<ParticleScript>().playParticle = true;
-            col.gameObject.SetActive(false);
+            gameObject.GetComponent<CollectRing>().activeGoal = false;
             //GameObject.Find("GameManager").GetComponent<GameManager>().nextLevel();
             GameObject.Find("GameManager").GetComponent<GameManager>().next = true;
+            col.gameObject.SetActive(false);
         }
 
         else if (col.gameObject.tag == "DeathBox")
