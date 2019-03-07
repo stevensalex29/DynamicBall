@@ -7,8 +7,10 @@ public class GameManager : MonoBehaviour
 {
     //Attributes
     private List<string> levels;
+    [SerializeField]
     private int currentLevel;
     private int totalRings;
+    public bool next;
 
     // Use this for initialization
     void Start()
@@ -35,7 +37,10 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (next)
+        {
+            Invoke("nextLevel", 4.0f);
+        }
     }
 
     // Loads the next level scene

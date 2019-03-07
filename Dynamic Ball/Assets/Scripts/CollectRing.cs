@@ -29,7 +29,7 @@ public class CollectRing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(coinCounter == tRings / 2)
+        if(coinCounter == tRings / 2 && !GameObject.Find("GameManager").GetComponent<GameManager>().next)
         {
             goal.SetActive(true);
         }
