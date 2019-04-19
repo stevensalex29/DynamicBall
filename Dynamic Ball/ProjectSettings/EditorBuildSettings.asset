@@ -5,9 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 01016df0c7a7d3f459c2efb586e23d91
@@ -21,23 +18,26 @@ EditorBuildSettings:
     path: Assets/Scenes/Level1.unity
     guid: 01dbc7f8be578e542ae164e81ad245a9
   - enabled: 1
-    path: Assets/Scenes/Level3.unity
-    guid: 37a18fc08b949724d93da205c8c9743a
-  - enabled: 1
     path: Assets/Scenes/Level2.unity
     guid: 245200a0dbbe2dc4a9f39853bc974c8d
   - enabled: 1
     path: Assets/Scenes/Level3.unity
     guid: 6f276be6d49d2e549b06828abcbfda20
   - enabled: 1
-    path: Assets/Scenes/LaterLevel.unity
-    guid: f7b9ab2224cd38f44952c57a327960d1
+    path: Assets/Scenes/Level4.unity
+    guid: 1745ab841e0f0284a8b132b2d8d071ae
+  - enabled: 1
+    path: Assets/Scenes/Level5.unity
+    guid: d43358c3bcaa7104b95b08964d48a46a
+  - enabled: 1
+    path: Assets/Scenes/Level6.unity
+    guid: 9945cb4cabe0c644c845e23d3446376d
   - enabled: 1
     path: Assets/Scenes/Level7.unity
     guid: 048671ed56b4e2f4f81da0fa9ebbf992
   - enabled: 1
-    path: Assets/Scenes/Level8.unity
-    guid: c27612196cae8cc46999c3c32121aa7e
+    path: Assets/Scenes/LaterLevel.unity
+    guid: f7b9ab2224cd38f44952c57a327960d1
   - enabled: 1
     path: Assets/Scenes/EndGame.unity
     guid: 54c4e669f7b64e6459b00a3079f5c062

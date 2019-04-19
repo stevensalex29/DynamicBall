@@ -11,13 +11,17 @@ public class CollectRing : MonoBehaviour
     private GameObject goal;
     public bool activeGoal = true;
 
+    private void Awake()
+    {
+        // set goal object
+        goal = GameObject.FindGameObjectWithTag("Goal");
+        goal.SetActive(false);
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         coinCounter = 0;
-        // set goal object
-        goal = GameObject.FindGameObjectWithTag("Goal");
-        goal.SetActive(false);
         // get total rings of level
         tRings = GameObject.FindGameObjectsWithTag("Ring").Length;
         // set initial ring display
