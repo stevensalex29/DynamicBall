@@ -52,6 +52,13 @@ public class ButtonScript : MonoBehaviour
     // Start the game
     public void StartGame() {
         // Set starting items as false
+#if UNITY_EDITOR
+        gameObject.SetActive(false);
+        RText.SetActive(false);
+        Background.SetActive(false);
+        calibration.SetActive(false);
+
+#elif UNITY_ANDROID
         if (Input.acceleration.z > -0.7f && Input.acceleration.z < -0.2f) //Only starts the game if player holds the phone correctly
         {
             gameObject.SetActive(false);
@@ -59,6 +66,8 @@ public class ButtonScript : MonoBehaviour
             Background.SetActive(false);
             calibration.SetActive(false);
         }
+#endif
+
     }
 
     // Restart the game
