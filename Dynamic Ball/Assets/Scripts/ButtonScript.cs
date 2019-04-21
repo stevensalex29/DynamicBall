@@ -91,6 +91,13 @@ public class ButtonScript : MonoBehaviour
 
         PlayerBall.GetComponent<CollectRing>().setCoinCounter(0);
 
+        //Reset blocks if any exist in the scene
+        GameObject[] blocks = GameObject.FindGameObjectsWithTag("Block");
+        for (int i = 0; i < blocks.Length; i++)
+        {
+            blocks[i].transform.position = blocks[i].GetComponent<PushBlockInfo>().startPos;
+        }
+
 
         // Reset UI
         startButton.SetActive(true);

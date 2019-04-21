@@ -70,6 +70,13 @@ public class Accelerometer : MonoBehaviour{
             }
             gameObject.GetComponent<CollectRing>().setCoinCounter(0);
 
+            //Reset blocks if any exist in the scene
+            GameObject[] blocks = GameObject.FindGameObjectsWithTag("Block");
+            for(int i = 0; i < blocks.Length; i++)
+            {
+                blocks[i].transform.position = blocks[i].GetComponent<PushBlockInfo>().startPos;
+            }
+
             //Reset movement
             rb.velocity = Vector3.zero;
             rb.angularVelocity = Vector3.zero;

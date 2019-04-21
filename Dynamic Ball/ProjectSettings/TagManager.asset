@@ -8,6 +8,7 @@ TagManager:
   - Ring
   - DeathBox
   - MusicPlayer
+  - Block
   layers:
   - Default
   - TransparentFX
