@@ -5,7 +5,7 @@ using UnityEngine;
 public class PCMoveScript : MonoBehaviour
 {
     Rigidbody rgbd;
-    float speed = 2.0f;
+    float speed = 5.0f;
 
     // Start is called before the first frame update
     void Start()
