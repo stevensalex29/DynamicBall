@@ -69,7 +69,7 @@ GameObject:
   - component: {fileID: 6226717015663377749}
   - component: {fileID: 2224203973377422153}
   - component: {fileID: 2787537270030698421}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pTorus1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
