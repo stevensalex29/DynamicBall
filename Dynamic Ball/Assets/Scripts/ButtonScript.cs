@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UI;
 public class ButtonScript : MonoBehaviour
 {
     //Attributes
@@ -17,6 +17,9 @@ public class ButtonScript : MonoBehaviour
     GameObject levelSelectButton;
     string levelName;
     int levelNumber;
+    GameObject page1;
+    GameObject page2;
+    bool swap;
 
 
     // Start is called before the first frame update
@@ -29,7 +32,13 @@ public class ButtonScript : MonoBehaviour
 
         if (sceneName == "Menu" || sceneName == "HowToPlay" || sceneName == "EndGame" || sceneName == "LevelSelect")
         {
-
+            if (sceneName == "LevelSelect")
+            {
+                page1 = GameObject.Find("Page1");
+                page2 = GameObject.Find("Page2");
+                //page2.SetActive(false);
+                swap = false;
+            }
         }
         else
         {
@@ -43,6 +52,7 @@ public class ButtonScript : MonoBehaviour
             startPosition = GameObject.Find("StartPosition").transform.position;
             calibration = GameObject.Find("Calibration");
         }
+        
 
     }
 
@@ -128,6 +138,22 @@ public class ButtonScript : MonoBehaviour
     public void LevelSelect()
     {
         SceneManager.LoadScene("LevelSelect");
+    }
+    public void NextPage()
+    {
+        if(!swap)
+        {
+            this.gameObject.GetComponentInChildren<Text>().text = "Previous Page";
+
+        }
+        else
+        {
+            this.gameObject.GetComponentInChildren<Text>().text = "Next Page";
+
+        }
+        swap = !swap;
+        page1.SetActive(!swap);
+        page2.SetActive(swap);
     }
     /*
     public void Level2()
