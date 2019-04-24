@@ -14,6 +14,8 @@ public class ButtonScript : MonoBehaviour
     Vector3 startPosition;
     GameObject goal;
     GameObject calibration;
+    GameObject levelSelectButton;
+    string levelName;
 
 
     // Start is called before the first frame update
@@ -108,6 +110,13 @@ public class ButtonScript : MonoBehaviour
     }
     public void PlayGame()
     {
+        SceneManager.LoadScene("TutorialScene");
+        PlayerPrefs.SetInt("currentLevel", 0);
+
+    }
+    public void LevelButton()
+    {
+
         SceneManager.LoadScene("TutorialScene");
         PlayerPrefs.SetInt("currentLevel", 0);
 
