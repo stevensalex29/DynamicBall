@@ -1955,7 +1955,7 @@ PrefabInstance:
     - target: {fileID: 1494542609792949181, guid: de99ce5244caa104b86dbfd1848f4c38,
         type: 3}
       propertyPath: m_Name
-      value: Goal_Red
+      value: Goal
       objectReference: {fileID: 0}
     - target: {fileID: 1494542609792949182, guid: de99ce5244caa104b86dbfd1848f4c38,
         type: 3}
@@ -8054,7 +8054,7 @@ Light:
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
