@@ -16,6 +16,7 @@ public class ButtonScript : MonoBehaviour
     GameObject calibration;
     GameObject levelSelectButton;
     string levelName;
+    int levelNumber;
 
 
     // Start is called before the first frame update
@@ -116,11 +117,19 @@ public class ButtonScript : MonoBehaviour
     }
     public void LevelButton()
     {
+        levelName = gameObject.name;
+        levelNumber = int.Parse(gameObject.tag);
 
-        SceneManager.LoadScene("TutorialScene");
-        PlayerPrefs.SetInt("currentLevel", 0);
+        PlayerPrefs.SetInt("currentLevel", levelNumber);
+        SceneManager.LoadScene(levelName);
+
 
     }
+    public void LevelSelect()
+    {
+        SceneManager.LoadScene("LevelSelect");
+    }
+    /*
     public void Level2()
     {
         SceneManager.LoadScene("RegularTutorial1");
@@ -174,6 +183,7 @@ public class ButtonScript : MonoBehaviour
         PlayerPrefs.SetInt("currentLevel", 9);
 
     }
+    */
 
     public void HowTo()
     {

@@ -126,8 +126,8 @@ GameObject:
   - component: {fileID: 244978583}
   - component: {fileID: 244978582}
   m_Layer: 5
-  m_Name: Level6
-  m_TagString: Untagged
+  m_Name: PushTutorial2
+  m_TagString: 5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -205,7 +205,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 244978582}
-        m_MethodName: Level6
+        m_MethodName: LevelButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -389,8 +389,8 @@ GameObject:
   - component: {fileID: 577334433}
   - component: {fileID: 577334432}
   m_Layer: 5
-  m_Name: Level8
-  m_TagString: Untagged
+  m_Name: MoveTutorial2
+  m_TagString: 7
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -468,7 +468,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 577334432}
-        m_MethodName: Level8
+        m_MethodName: LevelButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -542,8 +542,8 @@ GameObject:
   - component: {fileID: 692094865}
   - component: {fileID: 692094864}
   m_Layer: 5
-  m_Name: Level1
-  m_TagString: Untagged
+  m_Name: TutorialScene
+  m_TagString: 0
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -621,7 +621,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 692094864}
-        m_MethodName: PlayGame
+        m_MethodName: LevelButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -848,8 +848,8 @@ GameObject:
   - component: {fileID: 713322209}
   - component: {fileID: 713322208}
   m_Layer: 5
-  m_Name: Level4
-  m_TagString: Untagged
+  m_Name: RegularTutorial3
+  m_TagString: 3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -927,7 +927,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 713322208}
-        m_MethodName: Level4
+        m_MethodName: LevelButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1001,8 +1001,8 @@ GameObject:
   - component: {fileID: 750851428}
   - component: {fileID: 750851427}
   m_Layer: 5
-  m_Name: Level2
-  m_TagString: Untagged
+  m_Name: RegularTutorial1
+  m_TagString: 1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1080,7 +1080,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 750851427}
-        m_MethodName: Level2
+        m_MethodName: LevelButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1381,8 +1381,8 @@ GameObject:
   - component: {fileID: 1129934439}
   - component: {fileID: 1129934438}
   m_Layer: 5
-  m_Name: Level9
-  m_TagString: Untagged
+  m_Name: RotateTutorial1
+  m_TagString: 8
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1460,7 +1460,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1129934438}
-        m_MethodName: Level9
+        m_MethodName: LevelButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1613,8 +1613,8 @@ GameObject:
   - component: {fileID: 1234251950}
   - component: {fileID: 1234251949}
   m_Layer: 5
-  m_Name: Level3
-  m_TagString: Untagged
+  m_Name: RegularTutorial2
+  m_TagString: 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1692,7 +1692,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1234251949}
-        m_MethodName: Level3
+        m_MethodName: LevelButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1845,8 +1845,8 @@ GameObject:
   - component: {fileID: 1327654783}
   - component: {fileID: 1327654782}
   m_Layer: 5
-  m_Name: Level5
-  m_TagString: Untagged
+  m_Name: PushTutorial1
+  m_TagString: 4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1924,7 +1924,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1327654782}
-        m_MethodName: Level5
+        m_MethodName: LevelButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2458,8 +2458,8 @@ GameObject:
   - component: {fileID: 1794108352}
   - component: {fileID: 1794108351}
   m_Layer: 5
-  m_Name: Level7
-  m_TagString: Untagged
+  m_Name: MoveTutorial1
+  m_TagString: 6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2537,7 +2537,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1794108351}
-        m_MethodName: Level7
+        m_MethodName: LevelButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
