@@ -14,7 +14,7 @@ public class ButtonScript : MonoBehaviour
     Vector3 startPosition;
     GameObject goal;
     GameObject calibration;
-    
+
 
     // Start is called before the first frame update
     void Start()
@@ -24,9 +24,9 @@ public class ButtonScript : MonoBehaviour
         // Retrieve the name of this scene.
         string sceneName = currentScene.name;
 
-        if (sceneName == "Menu" || sceneName == "HowToPlay" || sceneName == "EndGame")
+        if (sceneName == "Menu" || sceneName == "HowToPlay" || sceneName == "EndGame" || sceneName == "LevelSelect")
         {
-            
+
         }
         else
         {
@@ -40,17 +40,18 @@ public class ButtonScript : MonoBehaviour
             startPosition = GameObject.Find("StartPosition").transform.position;
             calibration = GameObject.Find("Calibration");
         }
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     // Start the game
-    public void StartGame() {
+    public void StartGame()
+    {
         // Set starting items as false
 #if UNITY_EDITOR
         gameObject.SetActive(false);
@@ -84,7 +85,7 @@ public class ButtonScript : MonoBehaviour
 
         // Reset rings
         GameObject[] rings = GameObject.Find("PlayerBall").GetComponent<CollectRing>().getAllRings();
-        for(int i = 0; i < rings.Length; i++)
+        for (int i = 0; i < rings.Length; i++)
         {
             rings[i].SetActive(true);
         }
@@ -108,7 +109,63 @@ public class ButtonScript : MonoBehaviour
     public void PlayGame()
     {
         SceneManager.LoadScene("TutorialScene");
+        PlayerPrefs.SetInt("currentLevel", 0);
+
     }
+    public void Level2()
+    {
+        SceneManager.LoadScene("RegularTutorial1");
+        PlayerPrefs.SetInt("currentLevel", 1);
+
+    }
+    public void Level3()
+    {
+        SceneManager.LoadScene("RegularTutorial2");
+        PlayerPrefs.SetInt("currentLevel", 2);
+
+    }
+    public void Level4()
+    {
+        SceneManager.LoadScene("RegularTutorial3");
+        PlayerPrefs.SetInt("currentLevel", 3);
+
+    }
+    public void Level5()
+    {
+        SceneManager.LoadScene("PushTutorial1");
+        PlayerPrefs.SetInt("currentLevel", 4);
+
+    }
+    public void Level6()
+    {
+        SceneManager.LoadScene("PushTutorial2");
+        PlayerPrefs.SetInt("currentLevel", 5);
+
+    }
+    public void Level7()
+    {
+        SceneManager.LoadScene("MoveTutorial1");
+        PlayerPrefs.SetInt("currentLevel", 6);
+
+    }
+    public void Level8()
+    {
+        SceneManager.LoadScene("MoveTutorial2");
+        PlayerPrefs.SetInt("currentLevel", 7);
+    }
+    public void Level9()
+    {
+        SceneManager.LoadScene("RotateTutorial1");
+        PlayerPrefs.SetInt("currentLevel", 8);
+
+    }
+    public void Level10()
+    {
+        SceneManager.LoadScene("RotateTutorial2");
+        PlayerPrefs.SetInt("currentLevel", 9);
+
+    }
+
     public void HowTo()
     {
         SceneManager.LoadScene("HowToPlay");
