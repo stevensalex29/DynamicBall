@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        levels = new List<string> {"TutorialScene","RegularTutorial1", "RegularTutorial2","RegularTutorial3","PushTutorial1","PushTutorial2","MoveTutorial1","MoveTutorial2","RotateTutorial1","RotateTutorial2"};
+        levels = new List<string> {"TutorialScene","RegularTutorial1", "RegularTutorial2","RegularTutorial3","PushTutorial1","PushTutorial2","MoveTutorial1","MoveTutorial2","RotateTutorial1","RotateTutorial2","RoadBlocks"};
         Scene currentScene = SceneManager.GetActiveScene(); //reset playerPrefs if at starting level
         string sceneName = currentScene.name;
         if (sceneName == "TutorialScene")

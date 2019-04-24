@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelSelect.unity
     guid: c8cc12554226e7d479371fec0476bd08
+  - enabled: 1
+    path: Assets/Scenes/RoadBlocks.unity
+    guid: 7e43fb28d5b1e4c40a657fa4a1db5238
   m_configObjects: {}
