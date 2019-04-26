@@ -9,7 +9,11 @@ public class GameManager : MonoBehaviour
     private List<string> levels;
     private int currentLevel;
     private int totalRings;
+    private string levelStats;
+    private int maxRings;
+    private string sName;
     public bool next;
+    
 
     // Use this for initialization
     void Start()
@@ -17,20 +21,28 @@ public class GameManager : MonoBehaviour
         levels = new List<string> {"TutorialScene","RegularTutorial1", "RegularTutorial2","RegularTutorial3","PushTutorial1","PushTutorial2","MoveTutorial1","MoveTutorial2","RotateTutorial1","RotateTutorial2","RoadBlocks"};
         Scene currentScene = SceneManager.GetActiveScene(); //reset playerPrefs if at starting level
         string sceneName = currentScene.name;
+        sName = sceneName;
+        maxRings = GameObject.FindGameObjectsWithTag("Ring").Length;
+
+        // set current level player prefs
         if (sceneName == "TutorialScene")
         {
-            PlayerPrefs.DeleteAll();
+            PlayerPrefs.SetInt("currentLevel", 0);
         }
-
         if (PlayerPrefs.HasKey("currentLevel"))
             currentLevel = PlayerPrefs.GetInt("currentLevel"); //setup current level in playerprefs
-        else
-            PlayerPrefs.SetInt("currentLevel", 0);
 
+        // set total rings player prefs
         if (PlayerPrefs.HasKey("totalRings"))
             totalRings = PlayerPrefs.GetInt("totalRings"); //setup current level in playerprefs
         else
             PlayerPrefs.SetInt("totalRings", 0);
+
+        // create stat pref automatically
+        string pref = sceneName + "Stats";
+        if (PlayerPrefs.HasKey(pref))
+            levelStats = PlayerPrefs.GetString(pref); //setup current level in playerprefs
+
     }
 
     // Update is called once per frame
@@ -49,8 +61,28 @@ public class GameManager : MonoBehaviour
         // set total rings
         int rings = GameObject.Find("PlayerBall").GetComponent<CollectRing>().getRings();
         int total = PlayerPrefs.GetInt("totalRings");
-        int t = total + rings;
-        PlayerPrefs.SetInt("totalRings",t);
+
+        // if level has already been played, update ring count
+        if (levelStats != null)
+        {
+            string[] split = levelStats.Split(new string[] { "/" }, System.StringSplitOptions.None);
+            int pastRings = int.Parse(split[0]);
+            if(rings > pastRings)
+            {
+                string pref = rings + "/" + maxRings;
+                int t = (total - pastRings) + rings;
+                PlayerPrefs.SetString(sName + "Stats", pref);
+                PlayerPrefs.SetInt("totalRings", t);
+            }   
+        }
+        else // otherwise, do first ring add
+        {
+            string pref = rings + "/" + maxRings;
+            int t = total + rings;
+            PlayerPrefs.SetString(sName + "Stats", pref);
+            PlayerPrefs.SetInt("totalRings", t);
+        }
+
 
         currentLevel++;
           
