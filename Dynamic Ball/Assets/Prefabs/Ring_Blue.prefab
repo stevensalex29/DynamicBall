@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3472780588306924943}
   - component: {fileID: 118665553803486184}
   m_Layer: 0
-  m_Name: Ring
+  m_Name: Ring_Blue
   m_TagString: Ring
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71,7 +71,7 @@ GameObject:
   - component: {fileID: 2787537270030698421}
   m_Layer: 9
   m_Name: pTorus1
-  m_TagString: Untagged
+  m_TagString: changeColor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
