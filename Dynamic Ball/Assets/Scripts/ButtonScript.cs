@@ -135,6 +135,12 @@ public class ButtonScript : MonoBehaviour
 
 
     }
+
+    public void ResetGameStats()
+    {
+        PlayerPrefs.DeleteAll();
+    }
+
     public void LevelSelect()
     {
         SceneManager.LoadScene("LevelSelect");
