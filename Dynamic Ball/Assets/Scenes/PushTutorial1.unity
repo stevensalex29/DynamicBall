@@ -2716,17 +2716,22 @@ PrefabInstance:
     - target: {fileID: 5614111705407035393, guid: 6d6f675d39a8a6b48948ece8138eede3,
         type: 3}
       propertyPath: maxZ
-      value: -5.884
-      objectReference: {fileID: 0}
-    - target: {fileID: 5614111705407035393, guid: 6d6f675d39a8a6b48948ece8138eede3,
-        type: 3}
-      propertyPath: maxX
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5614111705407035393, guid: 6d6f675d39a8a6b48948ece8138eede3,
         type: 3}
+      propertyPath: maxX
+      value: -2.545328
+      objectReference: {fileID: 0}
+    - target: {fileID: 5614111705407035393, guid: 6d6f675d39a8a6b48948ece8138eede3,
+        type: 3}
       propertyPath: maxY
-      value: -0.5495345
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5614111705407035393, guid: 6d6f675d39a8a6b48948ece8138eede3,
+        type: 3}
+      propertyPath: checkX
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5221866847391867030, guid: 6d6f675d39a8a6b48948ece8138eede3,
         type: 3}
