@@ -8,7 +8,7 @@ public class LevelManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for(int i = 0; i < 11; i++)
+        for(int i = 0; i < 14; i++)
         {
             string name = GameObject.FindGameObjectWithTag(i.ToString()).name;
             if(PlayerPrefs.HasKey(name + "Stats")){
