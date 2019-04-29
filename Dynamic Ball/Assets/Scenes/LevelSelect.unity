@@ -282,7 +282,7 @@ GameObject:
   - component: {fileID: 223013146}
   - component: {fileID: 223013145}
   m_Layer: 5
-  m_Name: PushTutorial1Stats
+  m_Name: MoveTutorial1Stats
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -363,7 +363,7 @@ GameObject:
   - component: {fileID: 241736492}
   - component: {fileID: 241736491}
   m_Layer: 5
-  m_Name: Plinko
+  m_Name: RoadBlocks
   m_TagString: 9
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -517,7 +517,7 @@ GameObject:
   - component: {fileID: 244978583}
   - component: {fileID: 244978582}
   m_Layer: 5
-  m_Name: MoveTutorial1
+  m_Name: PushTutorial1
   m_TagString: 5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -897,7 +897,7 @@ GameObject:
   - component: {fileID: 281938357}
   - component: {fileID: 281938356}
   m_Layer: 5
-  m_Name: VerticalFall
+  m_Name: TN_Ferry
   m_TagString: 16
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1049,7 +1049,7 @@ GameObject:
   - component: {fileID: 339201168}
   - component: {fileID: 339201167}
   m_Layer: 5
-  m_Name: RoadBlocksStats
+  m_Name: FerrisWheelStats
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1128,7 +1128,7 @@ GameObject:
   - component: {fileID: 392569074}
   - component: {fileID: 392569073}
   m_Layer: 5
-  m_Name: MoveTutorial1Stats
+  m_Name: PushTutorial1Stats
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1941,7 +1941,7 @@ GameObject:
   - component: {fileID: 713322209}
   - component: {fileID: 713322208}
   m_Layer: 5
-  m_Name: PushTutorial1
+  m_Name: MoveTutorial1
   m_TagString: 3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2093,7 +2093,7 @@ GameObject:
   - component: {fileID: 742161818}
   - component: {fileID: 742161817}
   m_Layer: 5
-  m_Name: ThinPlatformsStats
+  m_Name: HotSwapStats
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2172,7 +2172,7 @@ GameObject:
   - component: {fileID: 748706580}
   - component: {fileID: 748706579}
   m_Layer: 5
-  m_Name: PlinkoStats
+  m_Name: RoadBlocksStats
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2407,7 +2407,7 @@ GameObject:
   - component: {fileID: 774912783}
   - component: {fileID: 774912782}
   m_Layer: 5
-  m_Name: FerrisWheel
+  m_Name: Plinko
   m_TagString: 13
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3035,7 +3035,7 @@ GameObject:
   - component: {fileID: 1018352025}
   - component: {fileID: 1018352024}
   m_Layer: 5
-  m_Name: PushALot
+  m_Name: Pusher
   m_TagString: 10
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3268,7 +3268,7 @@ GameObject:
   - component: {fileID: 1060691056}
   - component: {fileID: 1060691055}
   m_Layer: 5
-  m_Name: Pusher
+  m_Name: ThinPlatforms
   m_TagString: 11
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3692,7 +3692,7 @@ GameObject:
   - component: {fileID: 1157084615}
   - component: {fileID: 1157084614}
   m_Layer: 5
-  m_Name: PusherStats
+  m_Name: ThinPlatformsStats
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3771,7 +3771,7 @@ GameObject:
   - component: {fileID: 1187872414}
   - component: {fileID: 1187872413}
   m_Layer: 5
-  m_Name: VerticalFallStats
+  m_Name: TN_FerryStats
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3850,7 +3850,7 @@ GameObject:
   - component: {fileID: 1188573984}
   - component: {fileID: 1188573983}
   m_Layer: 5
-  m_Name: PushALotStats
+  m_Name: PusherStats
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4162,7 +4162,7 @@ GameObject:
   - component: {fileID: 1254860263}
   - component: {fileID: 1254860262}
   m_Layer: 5
-  m_Name: Pushtutorial2Stats
+  m_Name: MoveTutorial2Stats
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4241,7 +4241,7 @@ GameObject:
   - component: {fileID: 1267835675}
   - component: {fileID: 1267835674}
   m_Layer: 5
-  m_Name: FerrisWheelStats
+  m_Name: PlinkoStats
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4322,7 +4322,7 @@ GameObject:
   - component: {fileID: 1327654783}
   - component: {fileID: 1327654782}
   m_Layer: 5
-  m_Name: Pushtutorial2
+  m_Name: MoveTutorial2
   m_TagString: 4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4632,7 +4632,7 @@ GameObject:
   - component: {fileID: 1465071467}
   - component: {fileID: 1465071466}
   m_Layer: 5
-  m_Name: TN_FerryStats
+  m_Name: VerticalFallStats
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4790,7 +4790,7 @@ GameObject:
   - component: {fileID: 1572149709}
   - component: {fileID: 1572149708}
   m_Layer: 5
-  m_Name: HotSwapStats
+  m_Name: PushALotStats
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4953,7 +4953,7 @@ GameObject:
   - component: {fileID: 1592586958}
   - component: {fileID: 1592586957}
   m_Layer: 5
-  m_Name: ThinPlatforms
+  m_Name: HotSwap
   m_TagString: 17
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5344,7 +5344,7 @@ GameObject:
   - component: {fileID: 1740589407}
   - component: {fileID: 1740589406}
   m_Layer: 5
-  m_Name: RoadBlocks
+  m_Name: FerrisWheel
   m_TagString: 14
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5498,7 +5498,7 @@ GameObject:
   - component: {fileID: 1794108352}
   - component: {fileID: 1794108351}
   m_Layer: 5
-  m_Name: MoveTutorial2
+  m_Name: PushTutorial2
   m_TagString: 6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5707,7 +5707,7 @@ GameObject:
   - component: {fileID: 1820715031}
   - component: {fileID: 1820715030}
   m_Layer: 5
-  m_Name: HotSwap
+  m_Name: PushALot
   m_TagString: 15
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5861,7 +5861,7 @@ GameObject:
   - component: {fileID: 1849564159}
   - component: {fileID: 1849564158}
   m_Layer: 5
-  m_Name: TN_Ferry
+  m_Name: VerticalFall
   m_TagString: 12
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6640,7 +6640,7 @@ GameObject:
   - component: {fileID: 2139362996}
   - component: {fileID: 2139362995}
   m_Layer: 5
-  m_Name: MoveTutorial2Stats
+  m_Name: PushTutorial2Stats
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

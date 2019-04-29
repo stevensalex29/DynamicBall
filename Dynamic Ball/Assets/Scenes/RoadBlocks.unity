@@ -7170,7 +7170,7 @@ MonoBehaviour:
   red: 255
   green: 0
   blue: 0
-  mat: {fileID: 2100000, guid: 1a89626eeae18904cb45b15f801121f2, type: 2}
+  mat: {fileID: 2100000, guid: 63bcdd122ec2a1542bbaf091d0971d86, type: 2}
 --- !u!4 &1047391939
 Transform:
   m_ObjectHideFlags: 0

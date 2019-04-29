@@ -42,7 +42,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Plinko.unity
     guid: bdc0732caa64df04eab41190d27918d8
   - enabled: 1
-    path: Assets/Scenes/Pushtutorial3.unity
+    path: Assets/Scenes/PushALot.unity
     guid: 74c857ce032df614aa8629bc27db1c39
   - enabled: 1
     path: Assets/Scenes/Pusher.unity
