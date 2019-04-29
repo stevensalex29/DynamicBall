@@ -9551,6 +9551,53 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 328057526}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &329204446
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 329204448}
+  - component: {fileID: 329204447}
+  m_Layer: 0
+  m_Name: ColorManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &329204447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329204446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b0533cd986eec94fb3689e287b23cd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  red: 0
+  green: 0
+  blue: 0
+  mat: {fileID: 2100000, guid: 1a89626eeae18904cb45b15f801121f2, type: 2}
+--- !u!4 &329204448
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329204446}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.3648505, y: -3.2254624, z: -7.73344}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &329243027
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10521,53 +10568,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 347972660}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &350830456
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 350830458}
-  - component: {fileID: 350830457}
-  m_Layer: 0
-  m_Name: colormanager
-  m_TagString: changeColor
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &350830457
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 350830456}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b0533cd986eec94fb3689e287b23cd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  red: 0
-  green: 0
-  blue: 0
-  mat: {fileID: 2100000, guid: 1a89626eeae18904cb45b15f801121f2, type: 2}
---- !u!4 &350830458
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 350830456}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20.272482, y: 1.8483663, z: 12.616361}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 18
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &356138884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61906,11 +61906,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Moving Platform Training 2:
+  m_Text: 'Sir Push A Lot:
 
-    Platforms can move in all directions,
-
-    use that to your advantage.'
+    Only one combination will unlock the path!'
 --- !u!222 &2053199389
 CanvasRenderer:
   m_ObjectHideFlags: 0

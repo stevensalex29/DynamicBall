@@ -11563,7 +11563,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Ferry:\nDodge the oncoming blocks \nas they make their way towards you."
+  m_Text: "Ferry:\nDodge the oncoming blocks \nas they make their way towards you!"
 --- !u!222 &2137334402
 CanvasRenderer:
   m_ObjectHideFlags: 0

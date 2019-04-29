@@ -10445,7 +10445,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Basic Training 1:
 
-    Tilt phone upright to calibrate, then press start.
+    Tilt the phone upright to calibrate before pressing start.
 
     Collect half of the rings to unlock the goal!'
 --- !u!222 &1347056896

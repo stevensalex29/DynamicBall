@@ -6301,9 +6301,9 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Rotating Platform Training 2:
 
-    Not all rotating platforms are helpful,
+    Not all rotating platforms are helpful.
 
-    avoid the dangerous ones to beat the level.'
+    Avoid dangerous one to reach the goal.'
 --- !u!222 &614342456
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -5247,11 +5247,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Plinko:
+  m_Text: 'Pachinko:
 
-    Drop the ball through the plinko board
-
-    to reach the goal below.'
+    Find the right path to the bottom!'
 --- !u!222 &1778146731
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -7395,9 +7395,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Road Blocks:
 
-    Avoid the road blocks to
-
-    make it to the goal.'
+    Avoid obstacles to reach the goal!'
 --- !u!222 &1179548029
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -798,7 +798,7 @@ MonoBehaviour:
 
     Blocks can be used to help you.
 
-    Push them to cover holes in the ground.'
+    Push them to fill holes in the ground.'
 --- !u!222 &133643938
 CanvasRenderer:
   m_ObjectHideFlags: 0

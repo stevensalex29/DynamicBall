@@ -866,7 +866,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Ferris Wheel:
 
-    Ride the ferris wheel to the goal.'
+    Ride the carts to collect rings and reach the goal!'
 --- !u!222 &301726332
 CanvasRenderer:
   m_ObjectHideFlags: 0

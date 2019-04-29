@@ -1281,8 +1281,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Moving Platform Training 1:\nSome platforms move, use them to \ncollect
-    rings and get to the goal."
+  m_Text: "Moving Platform Training 1:\nSome platforms move. Use them to \ncollect
+    rings and reach the goal."
 --- !u!222 &1021363276
 CanvasRenderer:
   m_ObjectHideFlags: 0

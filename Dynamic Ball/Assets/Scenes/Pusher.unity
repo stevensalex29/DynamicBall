@@ -3435,7 +3435,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Pusher:
 
-    Avoid the pushing block to reach the goal.'
+    Use safe zones to avoid being knocked off!'
 --- !u!222 &865425678
 CanvasRenderer:
   m_ObjectHideFlags: 0

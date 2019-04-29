@@ -514,7 +514,7 @@ MonoBehaviour:
 
     Swap between the rotating
 
-    platforms to reach the goal.'
+    platforms to reach the final goal!'
 --- !u!222 &193349399
 CanvasRenderer:
   m_ObjectHideFlags: 0

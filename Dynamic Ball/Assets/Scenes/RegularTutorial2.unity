@@ -8007,9 +8007,9 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Basic Training 3:
 
-    Each goal teleports you to a different area.
+    Reaching the goal sends you to the next level.
 
-    Get the ball home by reaching the last one!'
+    Win by reaching the last one!'
 --- !u!222 &1157547202
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -184,9 +184,9 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Moving Platform Training 2:
 
-    Platforms can move in all directions,
+    Platforms can move in all directions.
 
-    use that to your advantage.'
+    Heads up!'
 --- !u!222 &15418656
 CanvasRenderer:
   m_ObjectHideFlags: 0

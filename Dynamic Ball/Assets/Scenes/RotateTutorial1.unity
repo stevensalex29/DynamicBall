@@ -1925,9 +1925,9 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Rotating Platform Training 1:
 
-    Some platforms rotate, but be careful,
+    Some platforms rotate. But be careful;
 
-    rolling across them can be tricky!'
+    Rolling across them can be tricky!'
 --- !u!222 &966979208
 CanvasRenderer:
   m_ObjectHideFlags: 0
