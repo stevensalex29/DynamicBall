@@ -62,4 +62,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/VerticalFall.unity
     guid: 752d035bada4f904e8a040836445f954
+  - enabled: 1
+    path: Assets/Scenes/Plinko.unity
+    guid: bdc0732caa64df04eab41190d27918d8
+  - enabled: 1
+    path: Assets/Scenes/FerrisWheel.unity
+    guid: c6d51bbcfe900014cbd129affe190b04
   m_configObjects: {}
