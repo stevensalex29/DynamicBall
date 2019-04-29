@@ -512,7 +512,9 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Hot Swap:
 
-'
+    Swap between the rotating
+
+    platforms to reach the goal.'
 --- !u!222 &193349399
 CanvasRenderer:
   m_ObjectHideFlags: 0

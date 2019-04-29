@@ -12,30 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/HowToPlay.unity
     guid: 00f3bda5bad67d84dbd0458ad5717cdc
   - enabled: 1
-    path: Assets/Scenes/RotateTutorial1.unity
-    guid: 1745ab841e0f0284a8b132b2d8d071ae
-  - enabled: 1
-    path: Assets/Scenes/RotateTutorial2.unity
-    guid: d43358c3bcaa7104b95b08964d48a46a
-  - enabled: 1
-    path: Assets/Scenes/MoveTutorial1.unity
-    guid: 9945cb4cabe0c644c845e23d3446376d
-  - enabled: 1
-    path: Assets/Scenes/MoveTutorial2.unity
-    guid: 048671ed56b4e2f4f81da0fa9ebbf992
-  - enabled: 1
-    path: Assets/Scenes/PushTutorial1.unity
-    guid: a5cb47c4b02c7514e802948d3844f448
-  - enabled: 1
-    path: Assets/Scenes/Pushtutorial2.unity
-    guid: ac69b30ae99eaac47b9d8f74659e369d
-  - enabled: 1
-    path: Assets/Scenes/TestScenes/LaterLevel.unity
-    guid: f7b9ab2224cd38f44952c57a327960d1
-  - enabled: 1
-    path: Assets/Scenes/EndGame.unity
-    guid: 54c4e669f7b64e6459b00a3079f5c062
-  - enabled: 1
     path: Assets/Scenes/TutorialScene.unity
     guid: c4d57b83c21a6df4aaa4e72327272bdd
   - enabled: 1
@@ -45,11 +21,38 @@ EditorBuildSettings:
     path: Assets/Scenes/RegularTutorial2.unity
     guid: 245200a0dbbe2dc4a9f39853bc974c8d
   - enabled: 1
-    path: Assets/Scenes/RegularTutorial3.unity
-    guid: 6f276be6d49d2e549b06828abcbfda20
+    path: Assets/Scenes/PushTutorial1.unity
+    guid: a5cb47c4b02c7514e802948d3844f448
   - enabled: 1
-    path: Assets/Scenes/LevelSelect.unity
-    guid: c8cc12554226e7d479371fec0476bd08
+    path: Assets/Scenes/Pushtutorial2.unity
+    guid: ac69b30ae99eaac47b9d8f74659e369d
+  - enabled: 1
+    path: Assets/Scenes/MoveTutorial1.unity
+    guid: 9945cb4cabe0c644c845e23d3446376d
+  - enabled: 1
+    path: Assets/Scenes/MoveTutorial2.unity
+    guid: 048671ed56b4e2f4f81da0fa9ebbf992
+  - enabled: 1
+    path: Assets/Scenes/RotateTutorial1.unity
+    guid: 1745ab841e0f0284a8b132b2d8d071ae
+  - enabled: 1
+    path: Assets/Scenes/RotateTutorial2.unity
+    guid: d43358c3bcaa7104b95b08964d48a46a
+  - enabled: 1
+    path: Assets/Scenes/Plinko.unity
+    guid: bdc0732caa64df04eab41190d27918d8
+  - enabled: 1
+    path: Assets/Scenes/Pushtutorial3.unity
+    guid: 74c857ce032df614aa8629bc27db1c39
+  - enabled: 1
+    path: Assets/Scenes/Pusher.unity
+    guid: 846fbf5067fd6be46b3d145ed4f348f9
+  - enabled: 1
+    path: Assets/Scenes/TN_Ferry.unity
+    guid: 953fbfbd0cd10fe4d82d6c70d410fec7
+  - enabled: 1
+    path: Assets/Scenes/FerrisWheel.unity
+    guid: c6d51bbcfe900014cbd129affe190b04
   - enabled: 1
     path: Assets/Scenes/RoadBlocks.unity
     guid: 7e43fb28d5b1e4c40a657fa4a1db5238
@@ -57,15 +60,15 @@ EditorBuildSettings:
     path: Assets/Scenes/HotSwap.unity
     guid: 6a7f9be6b0e7f6d4692be1ae417acab0
   - enabled: 1
-    path: Assets/Scenes/Pusher.unity
-    guid: 846fbf5067fd6be46b3d145ed4f348f9
-  - enabled: 1
     path: Assets/Scenes/VerticalFall.unity
     guid: 752d035bada4f904e8a040836445f954
   - enabled: 1
-    path: Assets/Scenes/Plinko.unity
-    guid: bdc0732caa64df04eab41190d27918d8
+    path: Assets/Scenes/ThinPlatforms.unity
+    guid: 6f276be6d49d2e549b06828abcbfda20
   - enabled: 1
-    path: Assets/Scenes/FerrisWheel.unity
-    guid: c6d51bbcfe900014cbd129affe190b04
+    path: Assets/Scenes/EndGame.unity
+    guid: 54c4e669f7b64e6459b00a3079f5c062
+  - enabled: 1
+    path: Assets/Scenes/LevelSelect.unity
+    guid: c8cc12554226e7d479371fec0476bd08
   m_configObjects: {}

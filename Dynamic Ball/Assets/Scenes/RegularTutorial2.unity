@@ -5951,7 +5951,7 @@ MonoBehaviour:
   red: 255
   green: 0
   blue: 0
-  mat: {fileID: 2100000, guid: a9e98ef8e36de9347a23cbbd551a6c36, type: 2}
+  mat: {fileID: 2100000, guid: 56ecc55f4aa17de409c91391c888550d, type: 2}
 --- !u!4 &875767198
 Transform:
   m_ObjectHideFlags: 0
@@ -7921,11 +7921,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Basic Training 1:
+  m_Text: 'Basic Training 3:
 
-    Tilt phone upright to calibrate, then press start.
+    Each goal teleports you to a different area.
 
-    Collect half of the rings to unlock the goal!'
+    Get the ball home by reaching the last one!'
 --- !u!222 &1157547202
 CanvasRenderer:
   m_ObjectHideFlags: 0

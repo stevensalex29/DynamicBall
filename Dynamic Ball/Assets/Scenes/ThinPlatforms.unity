@@ -6411,11 +6411,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Basic Training 4:
-
-    Some rings are hard to reach. Remember,
-
-    only half are needed to go to the next level!'
+  m_Text: "Final Stretch:\nYou're almost there, cross the \nplatforms to finally go
+    home!"
 --- !u!222 &1321201427
 CanvasRenderer:
   m_ObjectHideFlags: 0

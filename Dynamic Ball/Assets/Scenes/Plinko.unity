@@ -1983,7 +1983,7 @@ MonoBehaviour:
   red: 0
   green: 0
   blue: 0
-  mat: {fileID: 2100000, guid: 1a89626eeae18904cb45b15f801121f2, type: 2}
+  mat: {fileID: 2100000, guid: 63bcdd122ec2a1542bbaf091d0971d86, type: 2}
 --- !u!4 &498529506
 Transform:
   m_ObjectHideFlags: 0
@@ -5247,9 +5247,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Push Training 1:
+  m_Text: 'Plinko:
 
-    Move blocks out of your way by pushing them.'
+    Drop the ball through the plinko board
+
+    to reach the goal below.'
 --- !u!222 &1778146731
 CanvasRenderer:
   m_ObjectHideFlags: 0

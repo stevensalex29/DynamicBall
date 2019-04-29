@@ -701,9 +701,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Push Training 1:
+  m_Text: 'Vertical Fall:
 
-    Move blocks out of your way by pushing them.'
+    Fall down the platforms
+
+    to the goal below you.'
 --- !u!222 &260155550
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8075,7 +8077,7 @@ MonoBehaviour:
   red: 0
   green: 0
   blue: 0
-  mat: {fileID: 2100000, guid: 1a89626eeae18904cb45b15f801121f2, type: 2}
+  mat: {fileID: 2100000, guid: 02392c2f39bf1f54ebdcb08c77544265, type: 2}
 --- !u!4 &2078423371
 Transform:
   m_ObjectHideFlags: 0
