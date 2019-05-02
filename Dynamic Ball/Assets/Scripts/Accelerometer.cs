@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Accelerometer : MonoBehaviour{
     
-    public float speed = 10.0f;
+    float speed = 15.0f;
+    float maxSpeed = 8.0f;
     Rigidbody rb;
     GameObject startButton;
     float xStart = 0, zStart = 0;
@@ -35,7 +36,9 @@ public class Accelerometer : MonoBehaviour{
 
             Vector3 acc = new Vector3(horz, 0, vert);
             rb.AddForce(acc * speed);
-        }else
+            rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
+        }
+        else
         {
             rb.velocity = new Vector3(0.0f, 0.0f, 0.0f);
         }

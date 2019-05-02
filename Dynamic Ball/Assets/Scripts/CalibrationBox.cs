@@ -16,7 +16,7 @@ public class CalibrationBox : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.acceleration.z > -0.7f && Input.acceleration.z < -0.2f)
+        if (Input.acceleration.z > -0.6f && Input.acceleration.z < -0.3f)
         {
             calibBox.GetComponent<Image>().color = Color.green;
         }

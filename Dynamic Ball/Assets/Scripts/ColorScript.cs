@@ -39,5 +39,8 @@ public class ColorScript : MonoBehaviour
         for (int i = 0; i < objectList.Length; i++) {
             objectList[i].GetComponent<Renderer>().material = mat;
         }
+
+        ParticleSystem.MainModule color = GameObject.Find("Win").GetComponent<ParticleSystem>().main;
+        color.startColor = new Color(1 - mat.color.r, 1 - mat.color.g, 1 - mat.color.b, 1);
     }
 }

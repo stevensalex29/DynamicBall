@@ -48,7 +48,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Pusher.unity
     guid: 846fbf5067fd6be46b3d145ed4f348f9
   - enabled: 1
-    path: Assets/Scenes/TN_Ferry.unity
+    path: Assets/Scenes/Ferry.unity
     guid: 953fbfbd0cd10fe4d82d6c70d410fec7
   - enabled: 1
     path: Assets/Scenes/FerrisWheel.unity

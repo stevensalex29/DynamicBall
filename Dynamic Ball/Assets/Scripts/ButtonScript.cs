@@ -71,9 +71,10 @@ public class ButtonScript : MonoBehaviour
         RText.SetActive(false);
         Background.SetActive(false);
         calibration.SetActive(false);
+#endif
 
-#elif UNITY_ANDROID
-        if (Input.acceleration.z > -0.7f && Input.acceleration.z < -0.2f) //Only starts the game if player holds the phone correctly
+#if UNITY_ANDROID
+        if (Input.acceleration.z > -0.6f && Input.acceleration.z < -0.3f) //Only starts the game if player holds the phone correctly
         {
             gameObject.SetActive(false);
             RText.SetActive(false);

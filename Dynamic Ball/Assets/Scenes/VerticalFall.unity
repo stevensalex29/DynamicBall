@@ -1194,6 +1194,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 617413087}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &617413089 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5426237937464809472, guid: bfee17d6a56466e469abcb952baf572a,
+    type: 3}
+  m_PrefabInstance: {fileID: 617413087}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617413088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a9d36153383aa640a407c102733e2db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &653980382
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1866,7 +1878,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 90, y: -130}
-  m_SizeDelta: {x: 125, y: 50}
+  m_SizeDelta: {x: 85, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1135248791
 MonoBehaviour:
@@ -2077,7 +2089,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 617413089}
         m_MethodName: Calibration
         m_Mode: 1
         m_Arguments:
