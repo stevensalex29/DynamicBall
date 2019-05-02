@@ -3771,7 +3771,7 @@ GameObject:
   - component: {fileID: 1187872414}
   - component: {fileID: 1187872413}
   m_Layer: 5
-  m_Name: TN_FerryStats
+  m_Name: FerryStats
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
