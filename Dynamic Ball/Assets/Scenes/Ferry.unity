@@ -10742,7 +10742,7 @@ PrefabInstance:
     - target: {fileID: 8602332280746558246, guid: e5572f87860c50549bd40493cc7eb02b,
         type: 3}
       propertyPath: m_Name
-      value: 4x4Blue (4)
+      value: Ferry
       objectReference: {fileID: 0}
     - target: {fileID: 7587956569527976641, guid: e5572f87860c50549bd40493cc7eb02b,
         type: 3}

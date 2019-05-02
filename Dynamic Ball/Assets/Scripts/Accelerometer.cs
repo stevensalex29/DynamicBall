@@ -83,6 +83,9 @@ public class Accelerometer : MonoBehaviour{
             //Reset movement
             rb.velocity = Vector3.zero;
             rb.angularVelocity = Vector3.zero;
+
+            //Reset the ferry
+            GameObject.Find("Ferry").GetComponent<FerryScript>().ResetFerry();
         }
     }
 
